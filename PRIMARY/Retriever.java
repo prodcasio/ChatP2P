@@ -26,11 +26,9 @@ public class Retriever extends Thread {
                 System.out.println("Socket accettato.");
                 BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
                 String request = br.readLine();
-                String ipReceived = request.split("/")[0];
-                System.out.println(request);
+                ListaUtenti.lista.add(request);
                 ss.close();
                 s.close();
-
             }
         } catch (IOException ex) {
             Logger.getLogger(Land.class.getName()).log(Level.SEVERE, null, ex);
