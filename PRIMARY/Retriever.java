@@ -11,9 +11,9 @@ import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Listener extends Thread {
+public class Retriever extends Thread {
 
-    Land() {
+    Retriever() {
     }
 
     @Override
